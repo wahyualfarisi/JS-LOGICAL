@@ -37,12 +37,12 @@ const  _2factorial = (num) =>  num !== 0 ? num * _2factorial(num - 1) : 1
 // 3. Using for Loop
 function _3factorial(num){
     //if num == 0 || 1 , the factorial is 1
-    if(num == 0 || num == 1)
+    if(num === 0 || num === 1)
         return 1
     
     
         for(var i = num - 1; i >= 1; i--){
-            num *= 1
+            num *= i
         }
 
         return num;
