@@ -30,9 +30,23 @@ function _1factorial(num){
 }
 
 
-//2 ways 
+// 2. Using shorthand syntax 
 const  _2factorial = (num) =>  num !== 0 ? num * _2factorial(num - 1) : 1
 
+
+// 3. Using for Loop
+function _3factorial(num){
+    //if num == 0 || 1 , the factorial is 1
+    if(num == 0 || num == 1)
+        return 1
+    
+    
+        for(var i = num - 1; i >= 1; i--){
+            num *= 1
+        }
+
+        return num;
+}
 
 
 
@@ -44,5 +58,5 @@ const  _2factorial = (num) =>  num !== 0 ? num * _2factorial(num - 1) : 1
 
 
 //set results
-var result = _2factorial(5);
+var result = _3factorial(5);
 console.log(result)
