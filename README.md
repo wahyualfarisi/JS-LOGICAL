@@ -2,5 +2,5 @@
 
 basic logical with javascript
 
-## Factorial
+## - Factorialize
 
