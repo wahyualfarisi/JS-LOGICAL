@@ -1,3 +1,8 @@
+//FACTORIAL PROSEDUR
+// N = 5
+// 5! = 5 * 4 * 3 * 2 * 1
+
+
 
 // 1 ways
 // Factorial a number with Recursion 
@@ -14,6 +19,14 @@ function _1factorial(num){
     //otherwise
     else
         return ( num * _1factorial(num - 1) )
+
+        /**
+         * 5th will return 5 * (5 - 1) => num = 5 * 4 = 20
+         * 4th will return 20 * (4 - 1) => num = 20 * 3 = 60
+         * 3th will return 60 * (3 - 1) => num = 60 * 2 = 120
+         * 2th will return 120 * (2 - 1) => num = 120 * 1 = 120
+         */
+
 }
 
 
